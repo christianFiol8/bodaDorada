@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Especial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Vinculando archivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Bodas de Oro - Olivia & Filiberto">
+  <meta property="og:description" content="50 años de amor y felicidad">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+  <!-- Portada -->
+  <section class="hero">
+    <div id="petals-container"></div>
+    <!-- Botón de música elegante -->
+  <div class="music-toggle-container">
+    <div class="music-toggle" id="musicToggle">
+      <div class="music-icon">
+        <i class="fas fa-music"></i>
+      </div>
+      <div class="music-wave">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span class="music-label">Activar música</span>
+    </div>
+  </div>
+  </section>
+  <!-- Audio -->
+  <audio id="backgroundMusic" loop>
+    <source src="assets/Trumpet Voluntary.mp3" type="audio/mpeg">
+    <source src="assets/Trumpet Voluntary.mp3" type="audio/ogg">
+  </audio>
+  <!--Cuenta regresiva-->
+  <section id="countdown-section">
+    <div class="countdown" id="countdown">
+      <div class="countdown-box">
+        <span id="days" class="countdown-number">00</span>
+        <span class="countdown-label">Días</span>
+      </div>
+      <span class="countdown-separator">:</span>
+      <div class="countdown-box">
+        <span id="hours" class="countdown-number">00</span>
+        <span class="countdown-label">Horas</span>
+      </div>
+      <span class="countdown-separator">:</span>
+      <div class="countdown-box">
+        <span id="minutes" class="countdown-number">00</span>
+        <span class="countdown-label">Minutos</span>
+      </div>
+      <span class="countdown-separator">:</span>
+      <div class="countdown-box">
+        <span id="seconds" class="countdown-number">00</span>
+        <span class="countdown-label">Segundos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Invitación Formal -->
+  <section id="formal-invitation">
+    <div class="invitation-container">
+      <div class="invitation-border">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+        
+        <div class="invitation-content">
+          <div class="invitation-header">
+            <h3>Tenemos el honor de invitarles</h3>
+            <div class="header-divider">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          
+          <div class="invitation-body">
+            <p class="invitation-text">
+              A celebrar junto a nosotros<br>
+              nuestra <span class="gold-text">Boda de Oro</span><br>
+              tras 50 años de compartir<br>
+              amor, risas y sueños cumplidos
+            </p>
+          </div>
+          
+          <div class="invitation-couple">
+            <div class="couple-names">
+              <span class="name">Olivia</span>
+              <span class="ampersand">&</span>
+              <span class="name">Filiberto</span>
+            </div>
+          </div>
+          
+          <div class="invitation-footer">
+            <p>Con la bendición de Dios y el cariño de nuestra familia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Foto de pareja-->
+  <section id="foto-grande">
+    <div class="full-width-photo">
+      <img src="assets/invitacion-boda2.jpg" alt="Olivia y Filiberto">
+      <div class="photo-overlay">
+        <p class="photo-quote">"El verdadero amor no es algo que se encuentra, sino algo que se construye día a día"</p>
+        <p class="photo-author">Olivia & Filiberto</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Fecha-->
+  <section id="fecha-anuncio">
+    <div class="fecha-content">
+      <h3 class="fecha-dia">Domingo 28</h3>
+      <h2 class="fecha-mes">Diciembre</h2>
+      <h3 class="fecha-ano">2025</h3>
+    </div>
+  </section>
+
+  <!--Nuestra historia-->
+  <section id="nuestra-historia">
+    <div class="historia-container">
+      <div class="historia-texto">
+        <h2>Nuestra Historia</h2>
+        <p>Hace 50 años, nuestros caminos se unieron para siempre en un día lleno de esperanzas y sueños. Desde entonces, hemos construido una vida juntos, llena de amor, risas y momentos inolvidables.</p>
+        <p>Los invitamos a celebrar con nosotros este hito tan especial, donde recordaremos el pasado y brindaremos por el futuro que aún nos espera.</p>
+      </div>
+      <div class="historia-imagen">
+        <img src="assets/nuestraHistoria.jpg" alt="Nuestra historia">
+      </div>
+    </div>
+  </section>
+   <!--Secciones Misa y Recepción-->
+  <section id="eventos">
+    <div class="section-header">
+      <h2 class="section-title-events">Celebraciones</h2>
+    </div>
+    <div class="timeline-cards">
+      <!-- Misa -->
+      <div class="timeline-card">
+        <div class="timeline-marker">
+          <div class="marker-icon">
+            <i class="fas fa-church"></i>
+          </div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="event-header">
+            <h3 class="event-name">Misa</h3>
+            <div class="event-date">
+              <span class="date-day">Sábado 27</span>
+              <span class="date-month">Diciembre</span>
+            </div>
+          </div>
+          <div class="event-details">
+            <div class="detail-item">
+              <i class="fas fa-clock"></i>
+              <span>7:00 PM</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Parroquia Espíritu Santo</span>
+            </div>
+            <div class="detail-address">
+              Aquiles Serdán, Pueblo Nuevo I y II
+            </div>
+          </div>
+          <div class="event-actions">
+            <a href="https://maps.app.goo.gl/onie5DdeestP4KXKA" class="map-link" target="_blank">
+              <i class="fas fa-directions"></i>
+              Ver ubicación
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Recepción -->
+      <div class="timeline-card">
+        <div class="timeline-marker">
+          <div class="marker-icon">
+            <i class="fas fa-champagne-glasses"></i>
+          </div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="event-header">
+            <h3 class="event-name">Recepción</h3>
+            <div class="event-date">
+              <span class="date-day">Domingo 28</span>
+              <span class="date-month">Diciembre</span>
+            </div>
+          </div>
+          <div class="event-details">
+            <div class="detail-item">
+              <i class="fas fa-clock"></i>
+              <span>8:00 PM</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>La Vianda Salón de Eventos</span>
+            </div>
+            <div class="detail-address">
+              Cam. a la Vianda, Las Garzas
+            </div>
+          </div>
+          <div class="event-actions">
+            <a href="https://maps.app.goo.gl/kFFtGtkTUXubSRX97" class="map-link" target="_blank">
+              <i class="fas fa-directions"></i>
+              Ver ubicación
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Secciones Código de Vestimenta y Mesa de Regalos - Nuevo Diseño -->
+  <section id="otros-detalles" class="pattern-bg">
+    <div class="section-header">
+      <h2 class="section-title">Detalles Importantes</h2>
+    </div>
+    <div class="feature-cards">
+      <!-- Código de Vestimenta -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <div class="feature-content">
+          <h3 class="feature-title">Código de Vestimenta</h3>
+          <div class="feature-description">
+            <p>Elegante / Formal</p>
+          </div>
+          <div class="feature-details">
+            <div class="detail-row">
+              <i class="fas fa-female"></i>
+              <span>Vestido largo</span>
+            </div>
+            <div class="detail-row">
+              <i class="fas fa-male"></i>
+              <span>Traje completo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mesa de Regalos -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-gift"></i>
+        </div>
+        <div class="feature-content">
+          <h3 class="feature-title">Mesa de Regalos</h3>
+          <div class="feature-description">
+            <p>Tu presencia es nuestro mayor regalo, pero si deseas tener un detalle especial, agradeceremos tu contribución en</p>
+          </div>
+          <div class="feature-details">
+            <div class="gift-option">
+              <div class="gift-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <div class="gift-info">
+                <h4>Efectivo</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Galería de recuerdos-->
+  <section id="galeria">
+    <h2 class="section-title">Nuestros Recuerdos</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/recuerdo1.jpg"></div>
+        <div class="swiper-slide"><img src="assets/recuerdo2.jpg"></div>
+        <div class="swiper-slide"><img src="assets/recuerdo3.jpg"></div>
+        <div class="swiper-slide"><img src="assets/recuerdo4.jpg"></div>
+        <div class="swiper-slide"><img src="assets/recuerdo5.jpg"></div>
+        <div class="swiper-slide"><img src="assets/recuerdo6.jpg"></div>
+      </div>
+      
+      <!-- Botones de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Paginación opcional -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox para galería -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <!-- Sección Confirmación RSVP -->
+  <section id="rsvp">
+    <h2 class="section-title">Confirmación de Asistencia</h2>
+    <div class="rsvp-notice">
+      <i class="fas fa-clock"></i>
+      <p>Favor de confirmar antes del <strong>8 de Diciembre 2025</strong></p>
+    </div>
+    <form id="rsvp-form" class="rsvp-form">
+      <input name="nombre" type="text" placeholder="Nombre completo" required>
+      <input name="acompanantes" type="number" placeholder="Número de acompañantes" min="0" required>
+
+      <select name="asistira" required>
+        <option value="">¿Asistirá?</option>
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="rsvp-message" style="text-align:center; color:#525F2C; font-weight:bold; margin-top:15px;"></p>
+  </section>
+
+  <!-- Pie -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-love">Con todo nuestro amor</p>
+      <p>Olivia & Filiberto</p>
+      <p>© 2025 - 50 años juntos</p>
+    </div>
+  </footer>
+
+   <!-- Botón para volver al inicio -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <!--Javascript-->
+
+  <script src="app.js"></script>
+
+  <script>
+    // Script para formulario RSVP
+    const form = document.getElementById('rsvp-form');
+    const message = document.getElementById('rsvp-message');
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwUAGbHUXwqnAG3C2vj47Ti9FJpp6His8M_cgzN69_ESrkamges3yV-VeCZ1RfAuR9BFQ/exec';
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(text => {
+            message.innerText = text;
+            form.reset();
+        })
+        .catch(err => {
+            message.innerText = "Ocurrió un error, intenta de nuevo.";
+            console.error(err);
+        });
+    });
+
+  </script>
+</body>
+</html>
