@@ -285,37 +285,48 @@
       </div>
     </div>
   </section>
-
-
-  <!--Galería de recuerdos-->
-  <section id="galeria">
-    <h2 class="section-title">Nuestros Recuerdos</h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="assets/recuerdo1.jpg"></div>
-        <div class="swiper-slide"><img src="assets/recuerdo2.jpg"></div>
-        <div class="swiper-slide"><img src="assets/recuerdo3.jpg"></div>
-        <div class="swiper-slide"><img src="assets/recuerdo4.jpg"></div>
-        <div class="swiper-slide"><img src="assets/recuerdo5.jpg"></div>
-        <div class="swiper-slide"><img src="assets/recuerdo6.jpg"></div>
+  <!--Galería Moderna-->
+<section id="galeria">
+  <h2 class="section-title">Galería</h2>
+  <div class="modern-gallery">
+    <!-- Fila 1 -->
+    <div class="gallery-row">
+      <div class="gallery-item large" data-aos="fade-up">
+        <img src="assets/recuerdo1.jpg" alt="Recuerdo 1" loading="lazy">
       </div>
-      
-      <!-- Botones de navegación -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-
-      <!-- Paginación opcional -->
-      <div class="swiper-pagination"></div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/recuerdo2.jpg" alt="Recuerdo 2" loading="lazy">
+      </div>
     </div>
-  </section>
-
-  <!-- Lightbox para galería -->
-  <div id="lightbox" class="lightbox">
-    <span class="close-lightbox">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-    <div class="lightbox-caption"></div>
+    
+    <!-- Fila 2 -->
+    <div class="gallery-row">
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/recuerdo3.jpg" alt="Recuerdo 3" loading="lazy">
+      </div>
+      <div class="gallery-item large" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/recuerdo4.jpg" alt="Recuerdo 4" loading="lazy">
+      </div>
+    </div>
+    
+    <!-- Fila 3 -->
+    <div class="gallery-row">
+      <div class="gallery-item large" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/recuerdo5.jpg" alt="Recuerdo 5" loading="lazy">
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+        <img src="assets/recuerdo6.jpg" alt="Recuerdo 6" loading="lazy">
+      </div>
+    </div>
   </div>
+</section>
 
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div class="lightbox-caption"></div>
+</div>
   <!-- Sección Confirmación RSVP -->
   <section id="rsvp">
     <h2 class="section-title">Confirmación de Asistencia</h2>
